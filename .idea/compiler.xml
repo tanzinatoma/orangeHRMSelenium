@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="orangeHRMSelenium" target="1.6" />
+      <module name="orangeHRMSelenium" target="19" />
     </bytecodeTargetLevel>
   </component>
 </project>
