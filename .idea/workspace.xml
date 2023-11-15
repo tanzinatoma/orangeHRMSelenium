@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="280aa1e9-4a36-4d60-b61b-f84e28853a29" name="Changes" comment="Project Structure Setup 2">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/admin/AddUserPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/admin/AddUserTests.java" afterDir="false" />
+    <list default="true" id="280aa1e9-4a36-4d60-b61b-f84e28853a29" name="Changes" comment="Create admin 1">
+      <change afterPath="$PROJECT_DIR$/src/main/java/resource/data.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resource/TestData.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resource/TestData.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699947759661</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Create admin 1">
+      <created>1700042614133</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1700042614133</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -145,6 +150,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project Structure Setup" />
     <MESSAGE value="Project Structure Setup 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project Structure Setup 2" />
+    <MESSAGE value="Create admin 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create admin 1" />
   </component>
 </project>
