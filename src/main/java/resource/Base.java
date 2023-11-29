@@ -20,7 +20,7 @@ public class Base
     public WebDriver setupApplication() throws IOException, InterruptedException
     {
         options.addArguments("--remote-allow-origins=*");
-        reader=new FileReader("/Users/tanzinatoma/Documents/OrangeHRM/OrangeHRM/src/main/java/resource/TestData.properties");
+        reader=new FileReader("/Users/tanzinatoma/Documents/Github/orangeHRMSelenium/src/main/java/resource/TestData.properties");
         props=new Properties();
         props.load(reader);
         String browser = props.getProperty("browser_name");
