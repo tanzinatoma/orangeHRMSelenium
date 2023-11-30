@@ -38,7 +38,7 @@ public class AddUserPage extends Base {
     }
     public void type_employee_name(String name) throws InterruptedException {
         driver.findElement(employee_name).sendKeys(name);
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         driver.findElement(employee_list).click();
     }
     public void click_status(){
@@ -59,5 +59,4 @@ public class AddUserPage extends Base {
     public void save_user(){
         driver.findElement(create_user_button).click();
     }
-
 }
