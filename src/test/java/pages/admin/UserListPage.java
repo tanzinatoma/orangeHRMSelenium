@@ -23,12 +23,12 @@ public class UserListPage extends Base {
         driver.findElement(search_button).click();
     }
     public void edit_employee(){
-        driver.findElement(search_button).click();
+        driver.findElement(edit_icon).click();
     }
     public void delete_employee(){
         driver.findElement(delete).click();
     }
-    public void verify_employee(){
+    public void verify_username(){
         Assert.assertEquals(driver.findElement(username_in_list).getText(), "Admin");
     }
 }

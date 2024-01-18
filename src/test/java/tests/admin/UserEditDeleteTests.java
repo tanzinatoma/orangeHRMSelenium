@@ -1,5 +1,6 @@
 package tests.admin;
 import com.github.javafaker.Faker;
+import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pages.LoginPage;
@@ -37,7 +38,15 @@ public class UserEditDeleteTests extends Base {
         list.select_employee_from_dropdown();
         list.click_search_employee();
         Thread.sleep(1500);
-        list.verify_employee();
+        list.verify_username();
     }
-
+    @Test(priority = 2, enabled = true)
+    public void edit_employee() throws InterruptedException {
+        list.edit_employee();
+        user.type_username("user.update");
+        user.save_user();
+        driver.get(props.getProperty("userlist_url"));
+        list.enter_employee_name(props.getProperty("employee_name"));
+        list.click_search_employee();
+    }
 }
