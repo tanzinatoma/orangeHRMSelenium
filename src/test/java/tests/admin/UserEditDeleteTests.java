@@ -55,4 +55,8 @@ public class UserEditDeleteTests extends Base {
         Thread.sleep(1500);
         list.verify_username("user.update");
     }
+    @Test(priority = 4, enabled = false)
+    public void delete_user(){
+        list.delete_employee();
+    }
 }
