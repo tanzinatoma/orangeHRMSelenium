@@ -19,7 +19,7 @@ public class AddUserPage extends Base {
     By username = By.xpath("/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div[4]/div/div[2]/input");
     By password = By.xpath("/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[2]/div/div[1]/div/div[2]/input");
     By confirm_password = By.xpath("/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[2]/div/div[2]/div/div[2]/input");
-    By create_user_button = By.xpath("/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[2]/div/div[2]/div/div[2]/input");
+    By create_user_button = By.xpath("/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[2]/button[2]");
 
     public void click_admin_sidebar(){
         driver.findElement(admin_sidebar).click();
@@ -46,6 +46,10 @@ public class AddUserPage extends Base {
     }
     public void click_enabled(){
         driver.findElement(enabled).click();
+    }
+    public void clear_username(){
+        driver.findElement(username).sendKeys(Keys.COMMAND+"A");
+        driver.findElement(username).sendKeys(Keys.BACK_SPACE);
     }
     public void type_username(String name){
         driver.findElement(username).sendKeys(name);

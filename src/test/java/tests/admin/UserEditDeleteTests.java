@@ -34,19 +34,25 @@ public class UserEditDeleteTests extends Base {
     @Test(priority = 2, enabled = true)
     public void search_employee() throws InterruptedException {
         list.enter_employee_name(props.getProperty("employee_name"));
-        Thread.sleep(1500);
+        Thread.sleep(3000);
         list.select_employee_from_dropdown();
         list.click_search_employee();
         Thread.sleep(1500);
-        list.verify_username();
+        list.verify_username("Nathan.Elliot");
     }
-    @Test(priority = 2, enabled = true)
+    @Test(priority = 3, enabled = true)
     public void edit_employee() throws InterruptedException {
         list.edit_employee();
+        user.clear_username();
         user.type_username("user.update");
         user.save_user();
+        Thread.sleep(3000);
         driver.get(props.getProperty("userlist_url"));
         list.enter_employee_name(props.getProperty("employee_name"));
+        Thread.sleep(3000);
+        list.select_employee_from_dropdown();
         list.click_search_employee();
+        Thread.sleep(1500);
+        list.verify_username("user.update");
     }
 }

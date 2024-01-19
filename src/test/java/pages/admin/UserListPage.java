@@ -28,7 +28,7 @@ public class UserListPage extends Base {
     public void delete_employee(){
         driver.findElement(delete).click();
     }
-    public void verify_username(){
-        Assert.assertEquals(driver.findElement(username_in_list).getText(), "Admin");
+    public void verify_username(String u_name){
+        Assert.assertEquals(driver.findElement(username_in_list).getText(), u_name);
     }
 }
