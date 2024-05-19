@@ -48,11 +48,12 @@ public class AddUserTests extends Base {
         assertThat(driver.getCurrentUrl()).isEqualTo(props.getProperty("dashboard_url"));
         login_test.pass("User Successfully Logged In");
     }
-    //@Test (priority = 2, enabled = false)
+    @Test (priority = 2, enabled = true)
     public void create_admin() throws InterruptedException {
         ExtentTest create_admin = reports.createTest("Create Admin Test");
         user.click_admin_sidebar();
-        create_admin.pass("Clicked on sidebar");
+        assertThatNoException();
+        create_admin.info("Clicked on sidebar");
         user.click_add_button();
         create_admin.pass("Clicked on Add Admin button");
         user.click_user_role();
